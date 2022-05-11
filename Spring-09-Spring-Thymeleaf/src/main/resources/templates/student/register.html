@@ -16,7 +16,13 @@
 <!--Link-->
 <a th:href="@{https://cydeo.com}">Cydeo Home Page</a><br>
 
-<a th:href="@{/student/welcome}">Link1</a>
+<a th:href="@{/student/welcome}">Link1</a><br>
+
+<!--Adding Parameters to Link-->
+
+<a th:href="@{/student/welcome(id=3)}">Link2</a>
+
+<a th:href="@{/student/welcome(${students.get(0).firstName})}">Link2</a>
 
 </body>
 </html>
