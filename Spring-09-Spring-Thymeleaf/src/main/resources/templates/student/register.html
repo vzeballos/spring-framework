@@ -24,5 +24,11 @@
 
 <a th:href="@{/student/welcome(${students.get(0).firstName})}">Link2</a>
 
+<!--Iteration-->
+
+<ul>
+    <li th:each="student : ${students}" th:text="${student.firstName}"></li>
+</ul>
+
 </body>
 </html>
