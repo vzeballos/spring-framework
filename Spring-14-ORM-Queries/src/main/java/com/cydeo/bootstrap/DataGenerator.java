@@ -15,8 +15,7 @@ public class DataGenerator implements CommandLineRunner {
 
     private final EmployeeRepository employeeRepository;
 
-    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository,
-    EmployeeRepository employeeRepository){
+    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository){
         this.regionRepository = regionRepository;
         this.departmentRepository = departmentRepository;
         this.employeeRepository = employeeRepository;
@@ -45,7 +44,8 @@ public class DataGenerator implements CommandLineRunner {
         System.out.println("");
 
         System.out.println("-----------------Employee Start-----------------");
-
+        System.out.println("getEmployeeDetail: " + employeeRepository.getEmployeeDetail());
+        System.out.println("getEmployeeSalary: " + employeeRepository.getEmployeeSalary());
         System.out.println("-----------------Employee End-----------------");
     }
 }

@@ -19,4 +19,5 @@ public class Spring14OrmQueriesApplication {
     public MigrateResult migrateResult(DataSource dataSource){
         return Flyway.configure().baselineOnMigrate(true).dataSource(dataSource).load().migrate();
     }
+
 }
