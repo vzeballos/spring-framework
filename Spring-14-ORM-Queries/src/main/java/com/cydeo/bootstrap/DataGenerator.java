@@ -1,4 +1,4 @@
-package com.cydeo.boostrap;
+package com.cydeo.bootstrap;
 
 import com.cydeo.repository.CourseRepository;
 import com.cydeo.repository.DepartmentRepository;
@@ -16,7 +16,8 @@ public class DataGenerator implements CommandLineRunner {
     private final EmployeeRepository employeeRepository;
     private final CourseRepository courseRepository;
 
-    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository, CourseRepository courseRepository) {this.regionRepository = regionRepository;
+    public DataGenerator(RegionRepository regionRepository, DepartmentRepository departmentRepository, EmployeeRepository employeeRepository, CourseRepository courseRepository) {
+        this.regionRepository = regionRepository;
         this.departmentRepository = departmentRepository;
         this.employeeRepository = employeeRepository;
         this.courseRepository = courseRepository;
