@@ -2,9 +2,11 @@ package com.cydeo.bootstrap;
 
 import com.cydeo.repository.*;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
+@Component
 public class DataGenerator implements CommandLineRunner {
 
     private final AccountRepository accountRepository;
