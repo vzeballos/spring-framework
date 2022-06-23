@@ -3,6 +3,8 @@ package com.cydeo.bootstrap;
 import com.cydeo.repository.*;
 import org.springframework.boot.CommandLineRunner;
 
+import java.time.LocalDateTime;
+
 public class DataGenerator implements CommandLineRunner {
 
     private final AccountRepository accountRepository;
@@ -27,9 +29,9 @@ public class DataGenerator implements CommandLineRunner {
         System.out.println(movieRepository.fetchAllMovieNames());
         System.out.println(movieCinemaRepository.countAllByCinemaId(4L));
         System.out.println(movieCinemaRepository.retrieveAllByLocationName("AMC Empire 25"));
-//        System.out.println(ticketRepository.fetchAllTicketsByUserAccount(4L));
-//        System.out.println(ticketRepository.fetchAllTicketsWithRangeOfDates(LocalDateTime.now().minusDays(25), LocalDateTime.now()));
-//        System.out.println(ticketRepository.retrieveAllBySearchCriteria("it"));
+        System.out.println(ticketRepository.fetchAllTicketsByUserAccount(4L));
+        System.out.println(ticketRepository.fetchAllTicketsWithRangeOfDates(LocalDateTime.now().minusDays(25), LocalDateTime.now()));
+        System.out.println(ticketRepository.retrieveAllBySearchCriteria("it"));
 
     }
 
