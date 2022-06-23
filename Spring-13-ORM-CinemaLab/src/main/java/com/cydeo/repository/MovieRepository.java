@@ -1,4 +1,10 @@
 package com.cydeo.repository;
 
-public interface MovieRepository {
+import com.cydeo.entity.Movie;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MovieRepository extends JpaRepository<Movie,Long> {
+
+
+
 }
